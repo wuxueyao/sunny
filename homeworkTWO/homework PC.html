@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>3.2 目的地游—国内二级页</title>
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+		}
+		/*第一块*/
+		.first{
+			width: 100%;
+			height: 45px;
+			background-color: #333333;
+			vertical-align: middle;
+		}
+		.title{
+			width: 380px;
+			float:right;
+		}
+		.title{
+			margin-top: 10px;
+		}
+		.phone{
+			vertical-align:middle;
+			float: left;
+			padding-right: 10px;
+		}
+		.title p{
+			display: inline-block;
+			font-size: 20px;
+			color: #ffffff;
+		}
+		.up{
+			float: left;
+			width: 120px;
+			height: 15px;
+			margin-right: 20px;
+			margin-left: 15px;
+		}
+		.up a{
+			text-decoration: none;
+			color: #ffffff;
+		}
+		.up li{
+			margin-top:2px;
+			font-size: 14px;
+			float:left;
+			padding-right:12px;
+			padding-left: 13px;
+			list-style-type: none;
+			background: url(images/line.png) no-repeat right center;
+		}
+		.up li:last-child{
+			background: none;
+		}
+		/*第二块*/
+		.second{
+			width: 100%;
+			height: 80px;
+			color: #ffffff;
+		}
+		.row{
+			float: right;
+			width: 840px;
+			height: 80px;
+		}
+		.row a{
+			text-decoration: none;
+			color: #000;
+		}
+		a:hover {
+			padding-bottom:29px;
+			border-bottom:2px solid #ff3300;
+			color: #ff3300;
+		}
+		ul.row>li:hover ul.until{
+			display: block;
+		}
+		.until{
+			display: none;
+			float: none;
+			font-size: 16px;
+			line-height: 40px;
+			list-style-type: none;
+			background-color: #fff;
+		}
+		.until span{
+			color: #ff3300;
+		}
+		.change{
+			padding: 0 20px;
+			font-size: 20px;
+			float:left;
+			text-align: center;
+			list-style-type: none;
+			line-height: 80px;
+		}
+		
+		.circle{
+			margin-left: 40px;
+			margin-top: 10px;
+		}
+		/*第三块*/
+		.third{
+			width: 100%;
+			height: 400px;
+			background: url(images/color.jpg) no-repeat center center;
+		}
+		.text{
+			width: 465px;
+			height: 110px;
+			color: #ffffff;
+			padding-top: 130px;
+			margin-left: 245px;
+		}
+		.text span{
+			line-height: 65px;
+			font-size: 48.1px;
+			font-style: [FZLTXHK];
+		}
+		.text p{
+			line-height:45px; 
+		}
+		.edge-left{
+			width: 40px;
+			height:80px;
+			background-color:#000;
+			opacity: 0.4;
+			float: left;
+		}	
+		.edge-right{
+			width: 40px;
+			height:80px;
+			background-color:#000;
+			opacity: 0.4;
+			float: right;
+
+		}
+		.point{
+			color: #999;
+			font-size:40px;
+			line-height: 80px;
+			text-align: center;
+		}
+		.under{
+			margin:0 auto;
+			width: 330px;
+			height: 10px;
+			margin-top: 125px;
+		}
+		.under ul{
+			padding: 0 15px;
+			color: #fff;
+			opacity: 0.6;
+			float:left;
+			list-style-type: none;
+		}
+		/*第四块*/
+		.fourth{
+			width: 100%;
+			height: 2865px;
+		}
+		.desk{
+			width: 1200px;
+			height: 2610px;
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+		.left{
+			width: 394px;
+			height: 2530px;
+			float: left;
+			text-align: center;
+			margin-right: 9px;
+		}
+		.middle{
+			width: 394px;
+			height: 2530px;
+			float: left;
+			text-align: center;
+			margin-right: 9px;
+		}
+		.right{
+			width: 394px;
+			height: 2530px;
+			float: left;
+			text-align: center;
+		}
+		.one{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 565px;
+			margin-bottom: 9px;
+		}
+		.two{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 640px;
+			margin-bottom: 9px;
+		}
+		.three{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 838px;
+			margin-bottom: 9px;
+		}
+		.four{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 757px;
+			margin-bottom: 9px;
+		}
+		.five{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 640px;
+			margin-bottom: 9px;
+		}
+		.six{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 610px;
+			margin-bottom: 9px;
+		}
+		.seven{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 558px;
+			margin-bottom: 9px;
+		}
+		.eight{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 599px;
+			margin-bottom: 9px;
+		}
+		.nine{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 645px;
+			margin-bottom: 9px;
+		}
+		.ten{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 606px;
+			margin-bottom: 9px;
+		}
+		.eleven{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 607px;
+			margin-bottom: 9px;
+		}
+		.twelve{
+			padding-top: 24px;
+			background-color: #ccc;
+			width: 393px;
+			height: 393px;
+		}
+		.list-one{
+			width: 252px;
+			height: 152px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-two{
+			width: 258px;
+			height: 188px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-three{
+			width: 270px;
+			height: 189px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-four{
+			width: 289px;
+			height: 190px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-five{
+			width: 270px;
+			height: 186px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-six{
+			width: 275px;
+			height: 185px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-seven{
+			width: 169px;
+			height: 155px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-eight{
+			width: 295px;
+			height: 190px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-nine{
+			width: 303px;
+			height: 152px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-ten{
+			width: 288px;
+			height: 182px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-eleven{
+			width: 250px;
+			height: 182px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-twelve{
+			width: 191px;
+			height: 123px;
+			margin: 0 auto;
+			margin-top: 25px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.square{
+			width: 132px;
+			height: 34px;
+			background-color:#ff3300;
+			margin: 0 auto;
+			border-radius:10px;
+			margin-top: 22px;
+		}
+		.square p{
+			color: #fff;
+			line-height: 34px;
+		}
+		.main{
+			font-size: 16px;
+			color: #000;
+		}
+		.main span{
+			display: inline-block;
+			font-size: 20px;
+			color: #ff3300;
+		}
+		.gray{
+			font-size: 16px;
+			color: #999;
+		}
+		.code{
+			width: 114px;
+			height: 135px;
+			position: fixed;
+			right: 47px;
+			top: 257px;
+			margin-bottom:-3000px;
+		}
+		.side{
+			width: 47px;
+			height: 390px;
+			margin-top: 1px;
+			position: fixed;
+			right: 0;
+			top: 160px;
+			margin-bottom:-3000px;
+		}
+		.mini{
+			width: 47px;
+			height: 47px;
+			margin-bottom: 1px;
+		}
+		.vip{
+			width: 47px;
+			height: 150px;
+		}
+		.follow{
+			width: 300px;
+			height: 45px;
+			margin: 0 auto;
+			border:1px solid #ccc;
+			background-color:none;
+			border-radius: 10px;
+			line-height:45px;
+			color: #ccc;
+			font-size: 20px;
+			text-align: center;
+			margin-top: 95px;
+		}
+		/*第五块*/
+		.fifth{
+			width: 100%;
+			height: 805px;
+			background-color: #000;
+		}
+		.top{
+			width: 100%;
+			height: 275px;
+			border-bottom: solid 1px #ccc;
+		}
+		.top ul{
+			width: 120px;
+			float: left;
+			list-style-type: none;
+			line-height: 30px;
+			color: #fff;
+			margin-top: 70px;
+		}
+		.big{
+			font-size: 18px;
+		}
+		.letter{
+			font-size: 14px;
+		}
+		.over{
+			width: 50px;
+			height: 45px;
+			background-color: #000;
+		}
+		.long{
+			width: 75px;
+			height: 151px;
+			padding-top: 112px;
+			text-align: center;
+			float: left;
+			color: #fff;
+			line-height: 33px;
+		}
+		.short{
+			width: 420px;
+			height: 160px;
+			float: right;
+			margin-top: 83px;
+		}
+		.call{
+			width: 50px;
+			height: 45px;
+			float: left;
+			margin-top: 5px;
+			margin-right: 25px;
+		}
+		.ask{
+			float: left;
+			width: 120px;
+			height: 50px;
+			text-align: center;
+		}
+		.large{
+			font-size: 26px;
+			color: #fff;
+		}
+		.small{
+			font-size: 12px;
+			color: #fff;
+		}
+		.sum{
+			width: 212px;
+			height: 75px;
+			font-size: 26px;
+			color: #fff;
+			float: right;
+		}
+		.add{
+			width: 340px;
+			height: 90px;
+			color: #fff;
+			font-size: 16px;
+			float: right;
+		}
+		.only{
+			width: 100%;
+			height: 370px;
+			border-bottom: solid 1px #ccc;
+		}
+		.tree{
+			float: left;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.tree ul{
+			padding: 0 15px;
+			color: #fff;
+			float:left;
+			list-style-type: none;
+			margin-top: 45px;
+			text-align: center;
+		}
+		.flower{
+			float: left;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.flower li{
+			padding: 0 8px;
+			color: #fff;
+			float:left;
+			list-style-type: none;
+			margin-top: 30px;
+			text-align: center;
+		}
+		.grass{
+			float: left;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.grass li{
+			padding: 0 8px;
+			color: #fff;
+			float:left;
+			list-style-type: none;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.water{
+			float: left;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.water li{
+			padding: 0 8px;
+			color: #fff;
+			float:left;
+			list-style-type: none;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.last{
+			width: 100%;
+			height: 160px;
+		}
+		.happy{
+			width: 550px;
+			height: 60px;
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+		.happy p{
+			text-align: center;
+			color: #fff;
+			font-size: 16px;
+			line-height: 30px;
+		}
+		.box{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="first">
+		<div class="title">
+			<div class="phone"><img src="images/phone.png"/></div>
+			<div class="phone"><p>400-808-8682</p></div>
+			<ul class="up">
+				<li><a href="">请登录</a></li>
+				<li><a href="">注册</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="second">
+		<img class="circle" src="images/logo.jpg">
+		<ul class="row">
+			<li class="change">
+				<a href="">首页</a>
+			</li>
+			<li class="change">
+				<a href="">目的地</a>
+				<ul class="until">
+					<li><a href=""><span>国内游</span></a></li>
+					<li><a href="">出境游</a></li>
+				</ul>
+			</li>
+			<li class="change">
+				<a href="">亲子游学</a>
+			</li>
+			<li class="change">
+				<a href="">酒店预订</a>
+			</li>
+			<li class="change">
+				<a href="">车辆接送</a>
+			</li>
+			<li class="change">
+				<a href="">签证代办</a>
+			</li>
+			<li class="change">
+				<a href="">精彩瞬间</a>
+			</li>
+		</ul>
+	</div>
+	<div class="third">
+		<div class="text">
+			<span>国内旅游</span>
+			<p>包含多个国内热门线路和景点，提供贴心的旅游服务</p>
+		</div>
+		<div class="edge-left"><p class="point"><</p></div>
+		<div class="edge-right"><p class="point">></p></div>
+		<div class="under">
+			<ul>
+				<li><img src="images/bottom.jpg"></li>
+			</ul>
+			<ul>
+				<li><img src="images/bottom.jpg"></li>
+			</ul>
+			<ul>
+				<li><img src="images/bottom.jpg"></li>
+			</ul>
+			<ul>
+				<li><img src="images/bottom.jpg"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="fourth">
+		<div class="code">
+			<img src="images/code.jpg">
+		</div>
+		<div class="side">
+			<div class="mini"><img src="images/QQ.jpg"></div>
+			<div class="mini"><img src="images/cell.jpg"></div>
+			<div class="mini"><img src="images/wechat.jpg"></div>
+			<div class="mini"><img src="images/weibo.jpg"></div>
+			<div class="mini"><img src="images/circle.jpg"></div>
+			<div class="vip"><img src="images/vip.jpg"></div>
+		</div>
+		<div class="desk">
+			<div class="left">
+				<div class="one">
+					<img src="images/one.jpg">
+					<div class="list-one">
+						<p class="main">云南丽江、大理、香格里拉6晚7日</p>
+						<p class="gray">(纯玩、冰川大索道、洱海大游船)</p>
+						<p class="main"><span>¥8350</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="four">
+					<img src="images/four.jpg">
+					<div class="list-four">
+						<p class="main">广西桂林、大漓江、遇龙河、世外桃源、银子岩、阳朔3晚4日跟团游</p>
+						<p class="gray">(双飞、0购物0自费、赠送印象刘三姐)</p>
+						<p class="main"><span>¥3650</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="seven">
+					<img src="images/seven.jpg">
+					<div class="list-seven">
+						<p class="main">厦门2晚3日自由行</p>
+						<p class="gray">(双飞，挂牌四星酒店)</p>
+						<p class="main"><span>¥1580</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="ten">
+					<img src="images/ten.jpg">
+					<div class="list-ten">
+						<p class="main">北京故宫、八达岭长城、颐和园、圆明园4晚5日跟团游</p>
+						<p class="main">(苏州双高、赠送奥运表演、奢华深度)</p>
+						<p class="main"><span>¥3500</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="two">
+					<img src="images/two.jpg">
+					<div class="list-two">
+						<p class="main">海南三亚4晚5日自由行</p>
+						<p class="gray">(双飞，4晚五星品牌红树林王后棕、送288元水上乐园门票，专车接送)</p>
+						<p class="main"><span>¥3390</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="five">
+					<img src="images/five.jpg">
+					<div class="list-five">
+						<p class="main">九寨沟、黄龙、4晚5日跟团游</p>
+						<p class="gray">(双飞国际五星喜来登+华美达、恒温游泳池、中西自助餐、藏式晚宴)</p>
+						<p class="main"><span>¥2970</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="eight">
+					<img src="images/eight.jpg">
+					<div class="list-eight">
+						<p class="main">【报名立减】拉萨、大峡谷、苯日神山、措木及日、纳木错双卧11日游</p>
+						<p class="gray">(2人报名立减1000)</p>
+						<p class="main"><span>¥6080</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="eleven">
+					<img src="images/eleven.jpg">
+					<div class="list-eleven">
+						<p class="main">云南丽江、大理、香格里拉6晚7日</p>
+						<p class="main">……</p>
+						<p class="gray">（……）</p>
+						<p class="main"><span>¥3500</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="three">
+					<img src="images/three.jpg">
+					<div class="list-three">
+						<p class="main">长沙、韶山、大峡谷玻璃桥、天子山、袁家界、金鞭溪、烟雨晚会、天门山玻璃栈道、凤凰5晚6日游</p>
+						<p class="main"><span>¥3100</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="six">
+					<img src="images/six.jpg">
+					<div class="list-six">
+						<p class="main">北京天安门广场、故宫、八达岭长城、颐和园、圆明园4晚5日跟团游</p>
+						<p class="gray">（苏州双高、0购物0自费、舒适深度）</p>
+						<p class="main"><span>¥3500</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="nine">
+					<img src="images/nine.jpg">
+					<div class="list-nine">
+						<p class="main">黄山 宏村 醉温泉2晚3日跟团游</p>
+						<p class="gray">(一晚宿醉温泉酒店，品质纯玩，门票全含)</p>
+						<p class="main"><span>¥870</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+				<div class="twelve">
+					<img src="images/twelve.jpg">
+					<div class="list-twelve">
+						<p class="main">其他旅游路线(后台补充)</p>
+						<p class="main"><span>¥3500</span>/人起</p>
+						<div class="square"><p>查看详情</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="follow">
+			<p>加载更多∨</p>
+		</div>	
+	</div>
+	<div class="fifth">
+		<div class="top">
+			<div class="box">
+				<ul>
+					<li class="big">关于我们</li>
+					<li class="letter">公司简介</li>
+					<li class="letter">团队介绍</li>
+					<li class="letter">帮助文档</li>
+				</ul>
+				<ul>
+					<li class="big">网站须知</li>
+					<li class="letter">预订须知</li>
+					<li class="letter">网站条约</li>
+				</ul>
+				<ul>
+					<li class="big">支付方式</li>
+					<li class="letter">支付宝</li>
+					<li class="letter">微信</li>
+					<li class="letter">上门刷卡</li>
+					<li class="letter">银行转账</li>
+				</ul>
+				<ul>
+					<li class="big">关注英华逸游</li>
+					<li><img src="images/eye.png" height="45" width="45"></li>
+					<li class="letter">新浪微博</li>
+				</ul>
+				<div class="long">
+					<img src="images/chat.png">
+					<p class="letter">官方微信</p>
+				</div>
+				<ul>
+					<li><div class="over"></div></li>
+					<li><img src="images/speak.png"></li>
+				</ul>
+				<div class="short">
+					<div class="call"><img src="images/call.png"></div>
+					<div class="ask">
+						<p class="large">咨询热线</p>
+						<p class="small">customer hotline</p>
+					</div>
+					<div class="sum">
+						<p>400-808-8682</p>
+						<p>0512-86862063</p>
+					</div>
+					<div class="call"></div>
+					<div class="add">
+						<p>邮箱：cs@yhyiyou.com</p>
+						<p>地址：苏州市姑苏区三元二村16号兴元楼2楼东</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="only">
+			<div class="box">
+				<div class="tree">
+					<ul class="big">
+						<li>合作伙伴</li>
+					</ul>
+					<ul>
+						<li><img src="images/xiecheng.jpg"></li>
+						<li class="letter">携程网</li>
+					</ul>
+					<ul>
+						<li><img src="images/feizhu.jpg"></li>
+						<li class="letter">阿里飞猪</li>
+					</ul>
+					<ul>
+						<li><img src="images/where.jpg"></li>
+						<li class="letter">去哪儿</li>
+					</ul>
+					<ul>
+						<li><img src="images/trip.jpg"></li>
+						<li class="letter">苏州旅游局</li>
+					</ul>
+				</div>
+				<div class="flower">
+					<ul class="big">
+						<li>热门位置</li>
+					</ul>
+					<ul>
+						<li class="letter">韩国</li>
+						<li class="letter">日本</li>
+						<li class="letter">菲律宾</li>
+						<li class="letter">越南</li>
+						<li class="letter">老挝</li>
+						<li class="letter">柬埔寨</li>
+						<li class="letter">泰国</li>
+						<li class="letter">马来西亚</li>
+						<li class="letter">新加坡</li>
+						<li class="letter">印度尼西亚</li>
+						<li class="letter">印度</li>
+						<li class="letter">斯里兰卡</li>
+						<li class="letter">土耳其</li>
+						<li class="letter">阿联酋</li>
+						<li class="letter">西班牙</li>
+						<li class="letter">意大利</li>
+						<li class="letter">希腊</li>
+						<li class="letter">法国</li>
+						<li class="letter">比利时</li>
+						<li class="letter">荷兰</li>
+						<li class="letter">英国</li>
+						<li class="letter">瑞士</li>
+						<li class="letter">奥地利</li>
+						<li class="letter">德国</li>
+						<li class="letter">匈牙利</li>
+						<li class="letter">俄罗斯</li>
+						<li class="letter">捷克</li>
+						<li class="letter">芬兰</li>
+						<li class="letter">葡萄牙</li>
+						<li class="letter">冰岛</li>
+						<li class="letter">美国</li>
+						<li class="letter">加拿大</li>
+						<li class="letter">巴西</li>
+						<li class="letter">阿根廷</li>
+						<li class="letter">澳大利亚</li>
+						<li class="letter">新西兰</li>
+					</ul>
+				</div>
+				<div class="grass">
+					<ul class="big">
+						<li>主题服务</li>
+					</ul>
+					<ul>
+						<li class="letter">海岛度假</li>
+						<li class="letter">历史文化</li>
+						<li class="letter">探索冒险</li>
+						<li class="letter">美食购物</li>
+						<li class="letter">都市生活</li>
+						<li class="letter">海外游学</li>
+						<li class="letter">邮轮度假</li>
+						<li class="letter">蜜月摄影</li>
+						<li class="letter">亲子乐园</li>
+					</ul>
+				</div>
+				<div class="water">
+					<ul class="big">
+						<li>友情链接</li>
+					</ul>
+					<ul>
+						<li class="letter">马蜂窝</li>
+						<li class="letter">穷游</li>
+						<li class="letter">booking</li>
+						<li class="letter">苏州旅游局</li>
+						<li class="letter">驴友网</li>
+						<li class="letter">吾爱全球签证公司</li>
+						<li class="letter">酒店团购</li>
+						<li class="letter">携程旅游攻略</li>
+						<li class="letter">天巡职航在线</li>
+						<li class="letter">满天飞旅游网</li>
+						<li class="letter">中国旅游网</li>
+						<li class="letter">澳乐网</li>
+						<li class="letter">背包兔旅游行程</li>
+						<li class="letter">出境旅游</li>
+						<li class="letter">国际酒店</li>
+						<li class="letter">广州旅行社</li>
+						<li class="letter">出境旅游</li>
+						<li class="letter">517旅行</li>
+						<li class="letter">花生游</li>
+						<li class="letter">家园网</li>
+						<li class="letter">海外婚礼</li>
+					</ul>
+				</div>
+			</div>		
+		</div>
+		<div class="last">
+			<div class="box">
+				<div class="happy">
+					<p>苏ICP备14019690号、2014-2017   @苏州英华国际旅游有限公司 版权所有</p>
+					<p>技术支持  杭州联橙科技</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
