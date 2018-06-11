@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>3.2 目的地游_国内二级页让手机</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*第一块*/
+		.first{
+			width: 750px;
+			margin: 0 auto;
+			height: 245px;
+			border-bottom: solid 2px #333;
+		}
+		.title{
+			width: 710px;
+			height: 112px;
+			margin: 0 auto;
+		}
+		.logo{
+			width: 225px;
+			height: 64px;
+			float: left;
+			margin-top: 20px;
+		}
+		.orange{
+			width: 165px;
+			height: 55px;
+			background-color:#ff3300;
+			margin-right: 45px;
+			border-radius:10px;
+			margin-top: 22px;
+			float: right;
+			font-size: 28px;
+			color: #fff;
+			text-align: center;
+			line-height: 55px;
+		}
+		.miss{
+			float: right;
+			width: 46px;
+			height: 47px;
+			margin-top: 30px;
+		}
+		/*第二块*/
+		.second{
+			width: 750px;
+			height: 365px;
+			margin: 0 auto;
+			background: url(images/color.jpg) no-repeat center center;
+		}
+		.text{
+			width: 380px;
+			height: 110px;
+			margin: 0 auto;
+			padding-top: 15px;
+			text-align: center;
+			color: #336699;
+		}
+		.big{
+			font-size: 40px;
+			line-height: 60px;
+		}
+		.small{
+			font-size: 28px;
+		}
+		/*第三块*/
+		.third{
+			width: 710px;
+			height: 2490px;
+			margin: 0 auto;
+			margin-top: 29px;
+		}
+		.one{
+			padding-top: 20px;
+			background-color: #ccc;
+			width: 348px;
+			height: 575px;
+			margin-bottom: 9px;
+			text-align: center;
+		}
+		.list-one{
+			width: 315px;
+			height: 135px;
+			margin: 0 auto;
+			margin-top: 30px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.three{
+			padding-top: 20px;
+			background-color: #ccc;
+			width: 348px;
+			height: 770px;
+			margin-bottom: 9px;
+			text-align: center;
+		}
+		.list-three{
+			width: 340px;
+			height: 189px;
+			margin: 0 auto;
+			margin-top: 30px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.five{
+			padding-top: 20px;
+			background-color: #ccc;
+			width: 348px;
+			height: 617px;
+			text-align: center;
+		}
+		.list-five{
+			width: 270px;
+			height: 186px;
+			margin: 0 auto;
+			margin-top: 30px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.two{
+			padding-top: 20px;
+			background-color: #ccc;
+			width: 348px;
+			height: 656px;
+			margin-bottom: 9px;
+			text-align: center;
+		}
+		.list-two{
+			width: 258px;
+			height: 188px;
+			margin: 0 auto;
+			margin-top: 30px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.four{
+			padding-top: 20px;
+			background-color: #ccc;
+			width: 348px;
+			height: 802px;
+			margin-bottom: 9px;
+			text-align: center;
+		}
+		.list-four{
+			width: 350px;
+			height: 190px;
+			margin: 0 auto;
+			margin-top: 30px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.six{
+			padding-top: 20px;
+			background-color: #ccc;
+			width: 348px;
+			height: 655px;
+			text-align: center;
+		}
+		.list-six{
+			width: 320px;
+			height: 185px;
+			margin: 0 auto;
+			margin-top: 30px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.square{
+			width: 132px;
+			height: 34px;
+			background-color:#ff3300;
+			margin: 0 auto;
+			border-radius:10px;
+			margin-top: 30px;
+		}
+		.square p{
+			color: #fff;
+			line-height: 34px;
+		}
+		.main{
+			font-size: 20px;
+			color: #000;
+		}
+		.main span{
+			display: inline-block;
+			font-size: 24px;
+			color: #ff3300;
+			line-height: 40px;
+		}
+		.gray{
+			font-size: 16px;
+			color: #999;
+		}
+		.left{
+			float: left;
+			margin-right: 10px;
+		}
+		.right{
+			float: left;
+		}
+		.follow{
+			width: 670px;
+			height: 85px;
+			border:1px solid #ccc;
+			background-color:none;
+			border-radius: 10px;
+			line-height:85px;
+			color: #666;
+			font-size: 34px;
+			text-align: center;
+			float: right;
+			margin-top: 100px;
+			margin-right: 25px;
+		}
+		/*第四块*/
+		.fourth{
+			margin: 0 auto;
+			width: 750px;
+			height: 435px;
+			background-color: #ccc;
+		}
+		.king{
+			width: 750px;
+			height: 210px;
+			background-color: #fff;
+			padding-left: 42px;
+			float: left;
+			margin-top: 20px;
+		}
+		.picture{
+			margin-top: 40px;
+			width: 93px;
+			height: 93px;
+			float: left;
+			margin-right: 15px;
+		}
+		.box{
+			margin-top: 40px;
+			width: 382px;
+			height: 210px;
+			float: left;
+		}
+		.bus{
+			width: 750px;
+			height: 185px;
+			background-color: #fff;
+			padding-left: 42px;
+			margin-top: 20px;
+			float: left;
+		}
+		.red{
+			color: #ff3300;
+		}
+		.blue{
+			color: #336699;
+		}
+		.large{
+			width: 382px;
+			height: 40px;
+			font-size: 30px;
+			margin-bottom: 30px;
+
+		}
+		.mini{
+			width: 382px;
+			height: 55px;
+			font-size: 20px;
+		}
+		.item{
+			margin-top: 40px;
+			width: 165px;
+			height: 55px;
+			border:1px solid #ccc;
+			background-color:none;
+			border-radius: 10px;
+			line-height:55px;
+			color: #999;
+			font-size: 28px;
+			text-align: center;
+			float: left;
+		}
+		/*第五块*/
+		.fifth{
+			width: 750px;
+			height: 480px;
+			background-color: #333;
+			margin: 0 auto;
+			float: left;
+		}
+		.online{
+			margin:0 auto;
+			width: 670px;
+			height: 100px;
+			border:4px solid #ccc;
+			background-color:none;
+			line-height:100px;
+			color: #fff;
+			font-size: 30px;
+			text-align: center;
+			margin-top: 65px;
+		}
+		.add{
+			width: 460px;
+			height: 30px;
+			font-size: 22px;
+			color: #fff;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 50px;
+			margin-top: 40px;
+		}
+		.last{
+			width: 385px;
+			height: 105px;
+			font-size: 22px;
+			color: #fff;
+			text-align: center;
+			margin: 0 auto;
+		}
+		.last p{
+			line-height: 35px;
+		}
+	</style>
+</head>
+<body>
+	<div class="first">
+		<div>
+			<img src="images/browser.png">
+			<div class="title">
+				<div class="logo"><img src="images/logo.jpg"/></div>
+				<div class="miss">
+					<img src="images/miss.png" width="46px" height="47px">
+				</div>
+				<div class="orange">
+					<p>快速定制</p>
+			</div>
+		</div>
+	</div>
+	<div class="second">
+		<div class="text">
+			<p class="big">国内旅游</p>
+			<p class="small">包含多个国内热门路线和景点</p>
+		</div>
+	</div>
+	<div class="third">
+		<div class="left">
+			<div class="one">
+				<img src="images/one.jpg" width="310px" height="288px">
+				<div class="list-one">
+					<p class="main">云南丽江、大理、香格里拉6晚7日</p>
+					<p class="gray">(纯玩、冰川大索道、洱海大游船)</p>
+					<p class="main"><span>¥8350</span>/人起</p>
+					<div class="square"><p>查看详情</p></div>
+				</div>
+			</div>
+			<div class="three">
+				<img src="images/three.jpg" width="310px" height="443px">
+				<div class="list-three">
+					<p class="main">长沙、韶山、大峡谷玻璃桥、
+					<p class="main">天子山、袁家界、金鞭溪、烟雨晚会、</p>
+					<p class="main">天门山玻璃栈道、凤凰5晚6日游</p>
+					<p class="main"><span>¥3100</span>/人起</p>
+					<div class="square"><p>查看详情</p></div>
+				</div>
+			</div>
+			<div class="five">
+				<img src="images/five.jpg" width="310px" height="290px">
+				<div class="list-five">
+					<p class="main">九寨沟、黄龙、4晚5日跟团游</p>
+					<p class="gray">(双飞国际五星喜来登+华美达、恒温游泳池、中西自助餐、藏式晚宴)</p>
+					<p class="main"><span>¥2970</span>/人起</p>
+					<div class="square"><p>查看详情</p></div>
+				</div>
+			</div>	
+		</div>
+		<div class="right">
+			<div class="two">
+				<img src="images/two.jpg" width="310px" height="330px">
+				<div class="list-two">
+					<p class="main">海南三亚4晚5日自由行</p>
+					<p class="gray">(双飞，4晚五星品牌红树林王后棕、送288元水上乐园门票，专车接送)</p>
+					<p class="main"><span>¥3390</span>/人起</p>
+					<div class="square"><p>查看详情</p></div>
+				</div>
+			</div>
+			<div class="four">
+				<img src="images/four.jpg" width="310px" height="472px">
+				<div class="list-four">
+					<p class="main">广西桂林、大漓江、遇龙河、</p>
+					<p class="main">世外桃源、银子岩、阳朔3晚4日跟团游</p>
+					<p class="gray">(双飞、0购物0自费、赠送印象刘三姐)</p>
+					<p class="main"><span>¥3650</span>/人起</p>
+					<div class="square"><p>查看详情</p></div>
+				</div>
+			</div>
+			<div class="six">
+				<img src="images/six.jpg" width="310px" height="328px">
+				<div class="list-six">
+					<p class="main">北京天安门广场、故宫、八达岭长城、颐和园、圆明园4晚5日跟团游</p>
+					<p class="gray">（苏州双高、0购物0自费、舒适深度）</p>
+					<p class="main"><span>¥3500</span>/人起</p>
+					<div class="square"><p>查看详情</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="follow">
+			<p>加载更多∨</p>
+		</div>	
+	</div>
+	<div class="fourth">
+		<div class="king">
+			<div class="picture"><img src="images/king.jpg"></div>
+			<div class="box">
+				<div class="red">
+					<p class="large">尊享定制 轻松预约</p>
+				</div>
+				<div class="mini">
+					<p>5秒提交需求，2小时内与您闪电沟通</p>
+					<p>24小时内获得专属定制旅游方案</p>
+				</div>
+			</div>
+			<div class="item">
+				<p>立即定制</p>
+			</div>
+		</div>
+		<div class="bus">
+			<div class="picture"><img src="images/bus.jpg"></div>
+			<div class="box">
+				<div class="blue">
+					<p class="large">机场接送 省心省力</p>
+				</div>
+				<div class="mini">
+					<p>提供上海、苏州、无锡各市</p>
+					<p>往返机场、码头接送服务，更有包车服务</p>
+				</div>
+			</div>
+			<div class="item">
+				<p>查看详情</p>
+			</div>
+		</div>
+	</div>
+	<div class="fifth">
+		<div class="online">
+			<p>咨询热线：400-808-8682</p>
+		</div>
+		<div class="add">
+			<p>地址：苏州市姑苏区三元二村16号兴元楼2楼东</p>
+		</div>
+		<div class="last">
+			<p>苏ICP备14019690号、2014-2017</p>
+			<p>@苏州英华国际旅游有限公司 版权所有</p>
+			<p>技术支持  杭州联橙科技</p>
+		</div>
+	</div>
+</body>
+</html>
